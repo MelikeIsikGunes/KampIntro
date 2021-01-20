@@ -23,5 +23,15 @@ namespace GenericsIntro
 
             items[items.Length - 1] = item; // Add ile gelen elemanı ekle -> items'deki son index numarasına. (Örn: items.Length 6 ise son elemanın index nosu 5'tir. O yüzden Length-1 yazıyoruz.)
         }
+
+        public int Length
+        {
+            get { return items.Length; } //eleman sayısını verir.
+        }
+
+        public T[] Items
+        {
+            get { return items; } //elemanları listeler.
+        }
     }
 }

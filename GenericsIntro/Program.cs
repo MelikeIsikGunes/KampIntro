@@ -9,7 +9,16 @@ namespace GenericsIntro
             MyList<string> isimler = new MyList<string>();  //string yerine istediğini verebilirsin: int,class...
             isimler.Add("Engin");
 
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(isimler.Length);
+            isimler.Add("Kerem");
+            Console.WriteLine(isimler.Length);
+
+            foreach (var isim in isimler.Items)
+            {
+                Console.WriteLine(isim);
+            }
+
+
         }
     }
 }
